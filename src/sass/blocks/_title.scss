@@ -1,0 +1,30 @@
+/* .container {
+    width: 875px;
+    
+} */
+.title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2e2e2e;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 23px;
+    
+    
+    &__subtitlefz21 {
+        padding:0 125px 0 125px;
+        font-size: 21px;
+        font-weight: 300;
+        text-transform: none;
+        padding-top: 17px;
+    }
+    &__subtitlefz19 {
+        padding:0 125px 0 125px;
+        font-size: 19px;
+        text-transform: none;
+        padding-top: 17px;
+        font-weight: 300;
+        text-align: center;
+        
+    }
+}

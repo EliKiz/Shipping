@@ -1,0 +1,21 @@
+.btn {
+    border-radius: 50px;
+    border: none;
+    background-color: $main-color;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    width: 160px;
+    height: 45px;
+    text-transform: uppercase;
+    &_main {
+        font-size: 15px;
+        font-weight: 700;
+        width: 230px;
+        height: 57px;
+    }
+    &:hover {
+        background-color: #dc5238;
+    }
+}
+

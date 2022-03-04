@@ -1,0 +1,90 @@
+.container__title {
+    padding: 0 125px;
+}
+.main {
+    padding: 133px 0 80px 0 ;
+    background: url("../img/background/background.png") no-repeat 50%/cover ;
+    min-height: 680px;
+    
+    &__header {
+        
+        text-align: center;
+       /*  color: #fff; */
+       text-transform: uppercase;
+       color:#fff;
+    }
+    &__subtitle{
+        font-size: 24px;
+        font-weight: 300;
+        text-transform: none;
+    }
+    &__title {
+        font-size: 59px;
+        font-weight: 700;
+        padding-top: 15px;
+        color: $main-color;
+        
+    }   
+    &__descr {
+        font-size: 35px;
+        font-weight: 400;
+    
+    }
+
+    /*  */
+    &__divider {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 35px 35px 0 35px;
+        &:before {
+            content: "";
+            border-radius: 5px;
+            position: absolute;
+            display: block;
+            height: 10px;
+            width: 10px;
+            background-color: #fff;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 31px;
+        }
+        &-one, &-two {
+            width: 385px;
+            height: 2px;
+            background-color: #fff;
+        }
+        
+    }
+
+    /*  */
+    &__wrapper {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        
+        &-item {
+            width: 262px;
+            display: flex;
+            flex-direction: column;
+            img {
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+                height: 50px;
+            }
+        }
+        &-descr {
+           text-align: center;
+           flex: 1;   
+           margin-top: 20px; 
+           color: #fff;
+          
+        }
+    }
+    &__button {
+        display: block;
+        margin: 40px auto 0 auto;
+    }
+    
+}

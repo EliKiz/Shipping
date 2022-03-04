@@ -1,0 +1,36 @@
+@import "libs/bootstrap-reboot.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+@import "base/variables";
+@import "base/mixins";
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ ul {
+     padding: 0;
+}
+.divider {
+    width: 148px;
+    height: 1px;
+    background-color: $main-color;
+    margin: 20px auto 0 auto;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+h1, h2, h3, h4 {
+    margin: 0px;
+}
+
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/battons";
+@import "blocks/title";
+@import "blocks/advantages";
+@import "blocks/about";
+@import "blocks/agent";
