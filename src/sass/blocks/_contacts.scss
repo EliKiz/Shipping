@@ -1,0 +1,64 @@
+.contacts {
+    background: url("../img/background/background-form.png") center 1%/ cover no-repeat;
+    &__wrapper {
+        padding: 62px 0 80px;
+        width: 900px;
+        margin: 0 auto;
+        display: grid;
+        &-header {
+            padding: 20px 0;
+            background-color: #25333c;
+            min-height: 70px;
+        }
+        &-title {
+            font-size: 19px;
+            line-height: 20px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &-subtitle {
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 400;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        &-form {
+            display: grid;
+            grid-template: repeat(2, minmax(47, auto)) / repeat(3, 270px);
+            gap: 11px 5px ;
+            background-color:  rgba(#ffffff, .7);
+            padding: 17px 40px 25px 40px;
+            #text {
+                grid-column: 1/4;
+                border-radius: 10px;
+                
+            }
+            input, textarea {
+                min-height: 46px;
+                padding: 7px 7px 7px 17px;
+                border: solid 1px #898989;
+                border-radius: 25px ;
+                resize: none;
+                &:focus {
+                    outline: none;
+                }
+                &::placeholder {
+                    font-size: 12px;
+                }
+            }
+            #button_form {
+                /* margin-top: 12px; */
+                grid-column: 2/3;
+                justify-self: center;
+            }   
+            
+        }
+        
+        
+    }
+    
+}

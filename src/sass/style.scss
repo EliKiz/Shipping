@@ -32,6 +32,7 @@
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    position: relative;
 }
 h1, h2, h3, h4 {
     margin: 0px;
@@ -48,3 +49,6 @@ h1, h2, h3, h4 {
 @import "blocks/consultation";
 @import "blocks/menager";
 @import "blocks/scheme";
+@import "blocks/review";
+@import "blocks/contacts";
+@import "blocks/map";
