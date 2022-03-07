@@ -1,7 +1,7 @@
 .map {
     position: relative;
     min-height: 500px;
-    background: url("../img/background/map.png");
+    background: url("../img/background/map.png") center center/ cover no-repeat;
     &__info{
         position: absolute;
         top:0;

@@ -1,8 +1,8 @@
 .contacts {
     background: url("../img/background/background-form.png") center 1%/ cover no-repeat;
     &__wrapper {
-        padding: 62px 0 80px;
-        width: 900px;
+        padding: 62px 10px 80px;
+        max-width: 900px;
         margin: 0 auto;
         display: grid;
         &-header {
@@ -26,18 +26,32 @@
             text-align: center;
             text-transform: uppercase;
         }
+        &-input {
+            position: relative;
+        }
         &-form {
             display: grid;
             grid-template: repeat(2, minmax(47, auto)) / repeat(3, 270px);
             gap: 11px 5px ;
             background-color:  rgba(#ffffff, .7);
             padding: 17px 40px 25px 40px;
+            label.error {
+                font-size: 14px;
+                position: absolute;
+                color: red;
+                left: 23px;
+                top: -18px;
+                
+                
+            }
             #text {
                 grid-column: 1/4;
                 border-radius: 10px;
                 
             }
             input, textarea {
+                width: 100%;
+                position: relative;
                 min-height: 46px;
                 padding: 7px 7px 7px 17px;
                 border: solid 1px #898989;
@@ -49,6 +63,7 @@
                 &::placeholder {
                     font-size: 12px;
                 }
+                
             }
             #button_form {
                 /* margin-top: 12px; */

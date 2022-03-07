@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+
+    <!-- <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon"> -->
     <link rel="stylesheet" href="/css/style.min.css">
     <title>gopt</title>
 </head>
@@ -34,7 +38,7 @@
                             <a href="tel:+79264230100">+7 (926) 423 01 00</a>
                         </div>
                     </div>
-                    <button class="header__batton btn">Перезвоните мне</button>
+                    <button class="header__button btn">Перезвоните мне</button>
                 </div>
             </div>
         </div>
@@ -82,7 +86,7 @@
             <div class="advantages__wrapper">
                 <div class="advantages__item">
                     <div class="advantages__item-icon">
-                        <img src="icons/advantages_icons/ofice_icon.png" alt="ofice">
+                        <img class="advantages__item-left" src="icons/advantages_icons/ofice_icon.png" alt="ofice">
                     </div>
                     <div class="advantages__item-descr">
                         <div class="advantages__item-head">
@@ -108,7 +112,7 @@
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__item-icon">
-                        <img src="icons/advantages_icons/frame_icon.png" alt="ofice">
+                        <img class="advantages__item-left" src="icons/advantages_icons/frame_icon.png" alt="ofice">
                     </div>
                     <div class="advantages__item-descr">
                         <div class="advantages__item-head">
@@ -134,7 +138,7 @@
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__item-icon">
-                        <img src="icons/advantages_icons/own_icon.png" alt="ofice">
+                        <img class="advantages__item-left" src="icons/advantages_icons/own_icon.png" alt="ofice">
                     </div>
                     <div class="advantages__item-descr">
                         <div class="advantages__item-head">
@@ -160,7 +164,7 @@
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__item-icon">
-                        <img src="icons/advantages_icons/angar_icon.png" alt="ofice">
+                        <img class="advantages__item-left" src="icons/advantages_icons/angar_icon.png" alt="ofice">
                     </div>
                     <div class="advantages__item-descr">
                         <div class="advantages__item-head">
@@ -244,6 +248,7 @@
                     </div>
                     
                 </div>
+                
                 <div class="price__wrapper-item">
                     <div class="price__wrapper-header">Ж/Д доставка</div>
                     <div class="price__wrapper-content">
@@ -284,20 +289,25 @@
     <section class="consultation">
         <div class="container">
             <div class="title consultation__title">Заказать бесплатную консультацию</div>
-            <form action="#" class="consultation__form">
-                
-                <div class="consultation__img ">
-                    <div class="around"><img src="icons/consultation_img/consultation_icon.png" alt="consultation_people"></div>
-                </div>
-                
-                <div class="consultation__wrapper">
-                    <input placeholder="Ваше имя..." id="name" type="text"> 
-                    <input placeholder="Ваше номер телефона..." id="number" type="number">
-                    <input placeholder="Ваш e-mail..." id="email" type="email">   
-                </div>
-                
-                <div class="consultation__wrapper-btn"><button class="btn consultation__btn">Отправить заявку</button></div>
-            </form>
+            <div class="consultation__content">
+                <form action="#" id="consultation-form" class="consultation__form">
+                    <div class="consultation__img ">
+                        <div class="around"><img src="icons/consultation_img/consultation_icon.png" alt="consultation_people"></div>
+                    </div>
+                    <div class="consultation__wrapper">
+                        <div class="consultation__wrapper-input">
+                        <input placeholder="Ваше имя..." name="name" id="name" type="text">   
+                        </div>
+                        <div class="consultation__wrapper-input">
+                        <input placeholder="Ваше номер телефона..." name="phone" id="namber" type="text">
+                        </div>
+                        <div class="consultation__wrapper-input">
+                        <input placeholder="Ваш e-mail..." name="email" id="email" type="text">    
+                        </div>
+                    </div>
+                    <div class="consultation__wrapper-btn"><button class="btn consultation__btn">Отправить заявку</button></div>
+                </form>
+            </div>
         </div>
     </section>
     <section class="menager">
@@ -412,13 +422,17 @@
                 <div class="contacts__wrapper-subtitle">Напишите нам</div>    
                 </div>
                 
-                <form class="contacts__wrapper-form" action="#">
-                    <input placeholder="Ваше имя..."  type="text">
-                    <input placeholder="Ваше номер телефона..."  type="number">
-                    <input placeholder="Ваш e-mail..."  type="e-mail">
-                    <textarea  placeholder="Сообщение..." name="text" id="text" >
-                        
-                    </textarea>
+                <form class="contacts__wrapper-form" id="contacts-form" action="#">
+                    <div class="contacts__wrapper-input">
+                        <input placeholder="Ваше имя..."  name="name" type="text">
+                    </div>
+                    <div class="contacts__wrapper-input">
+                        <input placeholder="Ваше номер телефона..." name="phone" type="number">
+                    </div>
+                    <div class="contacts__wrapper-input">
+                        <input placeholder="Ваш e-mail..."  name="email" id="email" type="text">
+                    </div>
+                    <textarea  placeholder="Сообщение..." name="text" id="text" ></textarea>
                     <button id="button_form" class="btn contacts__btn">Отправить заявку</button>
                 </form>
                 <!-- <input placeholder="Сообщение..."   type="text"> -->
@@ -426,8 +440,6 @@
         </div>
     </section>
     <section class="map">
-        
-        
             <div class="map__info">
                 <div class="map__info-title">г. Москва</div>
                 <div class="map__info-text">ул. Садовническая, дом 5, офис 4-6 700 от м. Новокузнецкая Тел: +7 (926) 423 01 00 <a href="#">info@glopt.ru;</a></div>
@@ -437,7 +449,38 @@
             </div>
         
     </section>
-    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__img"><img src="icons/footer/icon_footer.png" alt="">
+                <div class="footer__title">Global Opt - Доставка грузов из Китая в Россию и СНГ</div>
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__tel">
+                        <span>Есть вопросы?</span>
+                        <div class="footer__number">
+                            <a href="tel:+79264230100">+7 (926) 423 01 00</a>
+                        </div>
+                    </div>    
+                    <button class="header__batton btn">Перезвоните мне</button>
+                </div>
+            </div>
+        </div>
+        <hr class="footer__hr">
+        <div class="container">
+            <div class="footer__wrapper-bottom">
+                <div class="footer__ears">© 2010 Scratch.com.ua</div>
+                <div class="footer__policy"><a href="policy.html">Политика конфидециальности</a></div>
+                <div class="footer__bild">
+                    <span>Создание сайта</span>
+                    <img src="icons/footer/footer.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script src="js/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/script.js"></script>
 </body>

@@ -1,6 +1,8 @@
 .consultation {
     padding: 55px 0 58px;
-    
+    &__content {
+        padding: 0 10px;
+    }
     &__form {
         margin-top: 71px;
         display: flex;
@@ -32,21 +34,46 @@
         min-height:166px;
         display: flex;
         flex-direction: row;
+        /* min-width: 675px; */
         
         justify-content: space-between;
         align-items: center;
+        &-input {
+            position: relative;
+            margin-right: 5px;
+            
+        }
         input {
+            min-width: 270px;
             min-height: 46px;
             margin-right: 5px;
             padding: 7px 7px 7px 17px;
             border: solid 1px #898989;
             border-radius: 25px ;
+            
             &:last-child {
                margin: 0; 
             }
             &::placeholder {
                 font-size: 12px;
             }
+            &:focus {
+                outline: none;
+            }
+            
+        }
+        .error {
+            border: 1px solid red;
+            
+        }
+        label.error {
+            font-size: 14px;
+            position: absolute;
+            border: none;
+            color: red;
+            top: 50px;
+            left: 10px;
+            
         }
         
         &-btn {

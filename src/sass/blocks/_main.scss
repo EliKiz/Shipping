@@ -36,7 +36,7 @@
         display: flex;
         justify-content: space-between;
         position: relative;
-        padding: 35px 35px 0 35px;
+        padding: 44px 35px 0 35px;
         &:before {
             content: "";
             border-radius: 5px;
@@ -47,11 +47,11 @@
             background-color: #fff;
             left: 50%;
             transform: translateX(-50%);
-            top: 31px;
+            top: 40px;
         }
         &-one, &-two {
             width: 385px;
-            height: 2px;
+            height: 1px;
             background-color: #fff;
         }
         

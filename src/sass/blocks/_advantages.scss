@@ -4,16 +4,23 @@
     &__wrapper {
         display: grid;
         margin-top: 31px;
-        grid-template-columns: repeat(2, 520px );
+        grid-template-columns: repeat(2, minmax(520px, auto));
         grid-template-rows: repeat(4, minmax(65px, auto));
-        column-gap: 100px;
-        row-gap: 36px;
-        grid-auto-rows: 65px, auto
+        column-gap: 80px;
+        row-gap: 29px;
+        grid-auto-rows: 65px
     }
     &__item {
         display: grid;
         grid-template: repeat(1, auto)/ auto auto;
         column-gap:17px;
+        img {
+            margin-top: 5px;
+            
+        }
+        &-left {
+            margin-left: 13px;
+        }
         
         &-head{
             font-size: 16px;
