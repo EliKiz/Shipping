@@ -1,13 +1,23 @@
 @media (max-width:1200px) {
+    .container {
+        max-width: 960px;
+    }
     .header {
-        &__wrapper {
-            padding: 0 10px;
+        
+        
+        &__contacts {
+            flex-direction: column;
         }
         &__nav {
-            font-size: 15px;
+            font-size: 16px;
         }
         &__tel {
             font-size: 14px;
+            margin: 0;
+        }
+        &__number {
+            display: flex;
+         justify-content: flex-end;
         }
        
     }
@@ -28,12 +38,11 @@
     .advantages {
         &__wrapper {
             column-gap: 40px;
-            grid-template-columns: repeat(2, minmax(480px, auto));
+            grid-template-columns: repeat(2, 1fr);
         }
     }
     .about {
         &__wrapper {
-            padding: 37px 10px;
             &-item {
                 width: 310px;
             }
@@ -43,7 +52,7 @@
     .price {
         &__wrapper {
             &-item {
-                width: 240px;
+                width: 230px;
             }
         }
     }
@@ -55,17 +64,16 @@
             left: 30%;
         }
     }
-    .footer {
-        &__wrapper {
-            padding: 0 10px;
-        }
-    }
+   
     
 }
 @media (max-width: 992px) { 
+    .container {
+        max-width: 720px;
+    }
     .header {
         &__nav {
-            font-size: 14px;
+            font-size: 13px;
         }
         &__logo {
             width: 50px;
@@ -90,12 +98,12 @@
     .main {
         &__wrapper {
             flex-wrap: wrap;
-            padding: 0 10px;
+            justify-content: space-around;
+            margin-bottom: -15px;
         }
         &__wrapper-item {
-            justify-content: space-around;
-            width: 350px;
-            
+            width: 300px;
+            margin-bottom: 15px;
         }
         &__title {
             font-size: 35px;
@@ -110,21 +118,36 @@
     }
     .advantages {
         &__wrapper {
-            column-gap: 30px;
-            grid-template-columns: repeat(2, minmax(360px, auto));
+            column-gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__item {
+            column-gap: 5px;
+        }
+        &__item-left {
+            margin: 0;
+            img {
+                margin: 0;
+            }
         }
     }
     .about {
+        &__subtitle {
+            padding: 0;
+        }
         &__wrapper {
-            flex-wrap: wrap;
-            /* width: 330px; */
-            padding: 37px 10px;
-            justify-content: space-around;
+           
+            margin-bottom: -10px;
         }
         &__wrapper-item {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
+    }
+    .agent {
+        &__subtitle {
+            padding: 22px 0 0 0;
+        }
     }
     .price {
         &__wrapper {
@@ -142,8 +165,13 @@
     .consultation {
         &__wrapper {
             input {
-                min-width: 240px;
+                min-width: 200px;
             }
+        }
+    }
+    .menager {
+        &__subtitle {
+            padding: 22px 0 0 0;
         }
     }
     .scheme {
@@ -156,7 +184,14 @@
             row-gap: 15px;
         }
     }
-    
+    .review {
+        .next {
+            right: 35%;
+        }
+        .prev {
+            left: 35%;
+        }
+    }
     .map {
         &__info {
             left: 58%;
@@ -182,9 +217,176 @@
     }
 }
 @media (max-width: 768px) { 
+    .container {
+      max-width: 540px;  
+    }
+    .main {
+        .hamburger {
+        display: flex;
+        }
+    }
+    .menu {
+        &__block {
+            width: 300px;
+            padding: 140px 0 0 25px;
+        }
+    }
+    .scheme {
+        &__wrapper {
+            &-second {
+                margin-top: 80px;
+
+            }
+        }
+    }
+    
+    .header {
+        &__wrapper {
+            justify-content: space-around;
+        }
+        nav {
+            display: none;
+        }
+        &__contacts {
+            flex-direction: row;
+        }
+        &__tel {
+            margin-right: 15px;
+        }
+    }
+    .advantages {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
+        }
+    }
+    .consultation {
+            &__wrapper {
+                min-height: 265px;
+                padding: 60px 0;
+                flex-direction: column;
+            
+            &-btn { 
+                bottom: -20px;
+            }
+        }
+    }
+    .map {
+        &__tear {
+            left: 10%;
+        }
+    }
 
 }
 
 @media (max-width: 576px) {
+    .title {
+        font-size: 21px;
+    }
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding: 140px 0 0 15px;
+        }
+    }
+    .header {
+        &__tel {
+            margin-right: 20px;
+        }
+        &__button {
+            display: none;
+        }
+    }
+    .main {
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__title {
+            font-size: 27px;
+        }
+        &__descr {
+            font-size: 16px;
+        }
+        &__button {
+            width: 200px;
+            height: 50px;
+        }
+    }
+    .advantages {
+        
+        &__wrapper {
+            grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+        }
+    }
+    .about {
+        
+        &__subtitle {
+            line-height: 20px;
 
+        }
+    }
+    .scheme {
+        .title {
+            font-size: 21px;
+        }
+        &__wrapper-first, &__wrapper-second {
+            grid-template: minmax(115px,auto)/ 1fr;
+            column-gap: 10px
+            
+        }
+        
+    }
+    .review {
+        &__subtitle {
+            padding: 0;
+        }
+        .prev, .next  {
+            bottom: 50%;
+        }
+        .prev {
+            left: 20%;
+        }
+        .next {
+            right: 20%;
+        }
+    }
+    .contacts {
+        &__wrapper-form {
+            grid-template: repeat(5, minmax(47px, auto)) / 1fr
+            
+        }
+        #text {
+            grid-column: unset;
+        }
+        #button_form{
+            /* grid-template-columns: none; */
+            grid-column: unset;
+        }
+    }
+    .map {
+        &__info {
+            width: 220px;
+            padding: 14px 13px;
+            left: 200px;
+            top: 55%;
+        }
+        &__tear {
+            left: 3%;
+        }
+    }
+    .footer {
+        &__title {
+            display: none;
+        }
+        &__police {
+
+        }
+        &__ears, &__bild {
+            font-size: 11px;
+        }
+        
+    }
 }

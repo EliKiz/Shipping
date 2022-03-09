@@ -1,3 +1,23 @@
+const hamburger = document.querySelector('.hamburger'),
+    menu = document.querySelector('.menu'),
+    closeElem = document.querySelector('.menu__close');
+    closeElemLink = document.querySelector('.menu__list');
+    overlay = document.querySelector('.menu__overlay')
+
+hamburger.addEventListener('click', () => {
+    menu.classList.add('active');
+});
+closeElem.addEventListener('click', () => {
+    menu.classList.remove('active');
+});
+       /*Создание функции на выключение меню при клике на ссылку  */
+closeElemLink.addEventListener('click', () => {
+    menu.classList.remove('active');
+});
+     /*Создание функции на выключение меню при клике вне меню  */
+overlay.addEventListener ('click', () => {
+    menu.classList.remove('active');
+});
 
 const slider = tns({
     container: '.reviev__slider',
@@ -49,5 +69,42 @@ $(document).ready(function(){
 };
 validateForms('#consultation-form');
 validateForms('#contacts-form');
+    $('input[name=phone]').mask("+7 (999) 999-99-99")
+    
+    /* Send letters on email */
+    $('form').submit(function (e){
+        e.preventDefault();
+
+        if (!$(this).valid()) {
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function(){
+            $(this).find("input").val("");
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+    
+    /* $('form').submit(function(e){
+        e.preventDefault();
+        if(!$(this).valid()) {
+            return;
+        }
+    }); */
+
+    /* Modal window */
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #thanks').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function() {
+        $('.overlay, #thanks').fadeOut('slow');
+    });
+
 
 });

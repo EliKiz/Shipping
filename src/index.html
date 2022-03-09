@@ -13,7 +13,35 @@
     <title>gopt</title>
 </head>
 <body>
-    
+    <div class="menu">
+        <div class="menu__block">
+            <div class="menu__close">
+                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z" fill="black"/>
+                </svg>
+            </div>
+            <div class="menu__nav">
+                <ul class="menu__list" > 
+                    <li class="menu__link">
+                        <a href="#advantages">Преимущества</a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="#about">Наша работа</a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="#price">Цены </a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="#scheme">Схема работы</a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="#footer">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu__overlay"></div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
@@ -38,12 +66,24 @@
                             <a href="tel:+79264230100">+7 (926) 423 01 00</a>
                         </div>
                     </div>
-                    <button class="header__button btn">Перезвоните мне</button>
+                    <form action="#consultation">
+                        <input class="header__button btn" type="submit" value="Перезвоните мне"> 
+                    </form>
+                    <!-- <a href="#consultation"><button  class="header__button btn">Перезвоните мне</button></a> -->
+                
                 </div>
             </div>
         </div>
     </header>
     <section class="main">
+        
+         <div class="hamburger">
+            <span></span>
+            <span class="long"></span>
+            <span></span>
+        </div>   
+        
+        
         <div class="container">
             <div class="container__title">
             <div class="main__header">
@@ -52,9 +92,10 @@
                 <h3 class="main__descr">В РОССИЮ И СНГ ВСЕМИ ВИДАМИ ТРАНСПОРТА</h3>  
                 <div class="main__divider">
                     <div class="main__divider-one"></div>
-                    <div class="main__divider-around"></div>
+                    
                     <div class="main__divider-two"></div>
                 </div>
+                
             </div>    
             </div>
             <div class="main__wrapper">
@@ -75,10 +116,14 @@
                     <div class="main__wrapper-descr">Экспресс доставка 1-2 дня из Гуанчжоу в Москву от 25$/кг</div>
                 </div>
             </div>
-            <button class="main__button btn btn_main">Получить расчет</button>
+            <form action="#consultation">
+                <input class="main__button btn btn_main" type="submit" value="Получить расчет">
+               <!-- <button  class="main__button btn btn_main">Получить расчет</button>  -->
+            </form>
+            
         </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="container">
             <div class="title advantages__title">
                 Преимущества работы с GlobalOpt
@@ -192,9 +237,9 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
-                <div class="title ">Наша работа - больше чем просто доставка</div>
+                <div class="title  about__title">Наша работа - больше чем просто доставка</div>
                 <div class="divider"></div>
                 <div class="about__subtitle title title__subtitlefz21">Мы организуем перевозки из Китая - оперативно и надежно, с учетом особенностей груза и ваших требований по срокам и бюджету.</div>
             <div class="about__wrapper">
@@ -208,15 +253,15 @@
                 <div class="about__wrapper-item">
                     <img src="img/about/ship.png" alt="insurance">
                     <div class="about__wrapper-descr">
-                        <div class="about__wrapper-title">Страховка груза</div>
-                        <div class="about__wrapper-text">Все грузы, логистику которых осуществляет Global Opt, застрахованы. Мы гарантируем полное возмещение стоимости груза в случаях, предусмотренных страхо- вым соглашением. Все ваши тревоги наша компания берет на себя.</div>
+                        <div class="about__wrapper-title">Логистика последней мили</div>
+                        <div class="about__wrapper-text"> Логистика последней мили Мы осуществляем доставку вашего груза до конкретного адреса. Привоз согласовывается менед- жерами по телефону, предварительно за сутки и за час до доставки. Также мы предоставляем услуги грузчи- ков по месту доставки груза.</div>
                     </div>
                 </div>
                 <div class="about__wrapper-item">
                     <img src="img/about/us.png" alt="insurance">
                     <div class="about__wrapper-descr">
-                        <div class="about__wrapper-title">Страховка груза</div>
-                        <div class="about__wrapper-text">Все грузы, логистику которых осуществляет Global Opt, застрахованы. Мы гарантируем полное возмещение стоимости груза в случаях, предусмотренных страхо- вым соглашением. Все ваши тревоги наша компания берет на себя.</div>
+                        <div class="about__wrapper-title">Мы всегда смотрим вперед</div>
+                        <div class="about__wrapper-text">Мы всегда смотрим вперед Философия нашей компании, делать себя и своих партнеров по всему миру, успешными и богатыми. Поэтому мы всегда открыты к диалогу о партнерстве и инвестициях.</div>
                     </div>
                 </div>
             </div>
@@ -231,7 +276,7 @@
             <div class="title__subtitlefz19 agent__subtitle">Русскоговорящие представители компании без труда найдут именно тот товар, который будет отвечать Вашим запросам как по качеству, так и по цене.</div>
         </div>
     </section>
-    <section class="price">
+    <section class="price" id="price">
         <div class="container">
             <div class="title ">Цены на любой вариант доставки</div>
             <div class="divider"></div>
@@ -246,9 +291,7 @@
                         <div class="price__wrapper-descr">Морские перевозки грузов из Китая в Россию за 35 дней с прохождением таможни</div>    
                         <button class="btn">Подробнее</button>
                     </div>
-                    
                 </div>
-                
                 <div class="price__wrapper-item">
                     <div class="price__wrapper-header">Ж/Д доставка</div>
                     <div class="price__wrapper-content">
@@ -260,6 +303,7 @@
                     </div>
                     
                 </div>
+                
                 <div class="price__wrapper-item">
                     <div class="price__wrapper-header">Автодоставка</div>
                     <div class="price__wrapper-content">
@@ -286,7 +330,7 @@
             </div> 
         </div>
     </section>
-    <section class="consultation">
+    <section class="consultation" id="consultation">
         <div class="container">
             <div class="title consultation__title">Заказать бесплатную консультацию</div>
             <div class="consultation__content">
@@ -299,13 +343,13 @@
                         <input placeholder="Ваше имя..." name="name" id="name" type="text">   
                         </div>
                         <div class="consultation__wrapper-input">
-                        <input placeholder="Ваше номер телефона..." name="phone" id="namber" type="text">
+                        <input placeholder="Ваше номер телефона..." name="phone" id="namber" >
                         </div>
                         <div class="consultation__wrapper-input">
                         <input placeholder="Ваш e-mail..." name="email" id="email" type="text">    
                         </div>
                     </div>
-                    <div class="consultation__wrapper-btn"><button class="btn consultation__btn">Отправить заявку</button></div>
+                    <div  class="consultation__wrapper-btn"><button data-modal="consultation" class="btn consultation__btn">Отправить заявку</button></div>
                 </form>
             </div>
         </div>
@@ -317,7 +361,7 @@
             <div class="title__subtitlefz19 menager__subtitle">Подберут для Вас оптимальную схему грузоперевозки. Проведут контроль закупок, организуют прямые поставки от завода-изготовителя.</div>
         </div>
     </section>
-    <section class="scheme">
+    <section class="scheme" id="scheme">
         <div class="container">
             <div class="title title__subtitlefz26">Схема работы с нами</div>
             <div class="scheme__wrapper-first">
@@ -427,13 +471,13 @@
                         <input placeholder="Ваше имя..."  name="name" type="text">
                     </div>
                     <div class="contacts__wrapper-input">
-                        <input placeholder="Ваше номер телефона..." name="phone" type="number">
+                        <input placeholder="Ваше номер телефона..." name="phone" >
                     </div>
                     <div class="contacts__wrapper-input">
                         <input placeholder="Ваш e-mail..."  name="email" id="email" type="text">
                     </div>
                     <textarea  placeholder="Сообщение..." name="text" id="text" ></textarea>
-                    <button id="button_form" class="btn contacts__btn">Отправить заявку</button>
+                    <button data-modal="consultation" id="button_form" class="btn contacts__btn">Отправить заявку</button>
                 </form>
                 <!-- <input placeholder="Сообщение..."   type="text"> -->
             </div>
@@ -449,7 +493,7 @@
             </div>
         
     </section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__img"><img src="icons/footer/icon_footer.png" alt="">
@@ -462,7 +506,9 @@
                             <a href="tel:+79264230100">+7 (926) 423 01 00</a>
                         </div>
                     </div>    
-                    <button class="header__batton btn">Перезвоните мне</button>
+                    <form action="#consultation">
+                        <input class="footer__button btn" type="submit" value="Перезвоните мне" >
+                    </form>
                 </div>
             </div>
         </div>
@@ -478,7 +524,17 @@
             </div>
         </div>
     </footer>
+    <!-- <div class="overlay" >
+        <div class="modal" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">Спасибо за ваше обращение</div>
+            <hr>
+            <div class="modal__suttitle">С вами свяжутся в течении 2 минут </div>
+
+        </div>
+    </div> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <!-- <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
     <script src="js/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>

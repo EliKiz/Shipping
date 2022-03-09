@@ -2,9 +2,12 @@
     padding: 50px 0 57px 0;
     
     &__wrapper {
-        padding-top: 37px;
-        display: flex;
-        justify-content: space-between;
+        margin-top: 37px;
+        display: grid;
+        grid-template: minmax(210px, auto)/ repeat(auto-fill, 310px);
+        justify-content: space-around;
+        row-gap: 30px;
+
         &-item {
             width: 360px;
             img {

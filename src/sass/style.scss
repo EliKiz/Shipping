@@ -30,7 +30,7 @@
     align-items: center;
 }
 .container {
-    max-width: 1140px;
+    width: 1140px;
     margin: 0 auto;
     position: relative;
 }
@@ -53,4 +53,6 @@ h1, h2, h3, h4 {
 @import "blocks/contacts";
 @import "blocks/map";
 @import "blocks/footer";
+@import "blocks/modal";
+
 @import "blocks/media";

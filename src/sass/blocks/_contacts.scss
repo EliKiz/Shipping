@@ -1,7 +1,7 @@
 .contacts {
     background: url("../img/background/background-form.png") center 1%/ cover no-repeat;
     &__wrapper {
-        padding: 62px 10px 80px;
+        padding: 62px 0 80px;
         max-width: 900px;
         margin: 0 auto;
         display: grid;
@@ -31,7 +31,7 @@
         }
         &-form {
             display: grid;
-            grid-template: repeat(2, minmax(47, auto)) / repeat(3, 270px);
+            grid-template: repeat(3, minmax(47px, auto)) / repeat(1, auto);
             gap: 11px 5px ;
             background-color:  rgba(#ffffff, .7);
             padding: 17px 40px 25px 40px;
