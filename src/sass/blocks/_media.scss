@@ -328,6 +328,12 @@
 
         }
     }
+    .consultation {
+        padding-top: 0;
+        &__wrapper-input {
+            margin: 0 0 20px;
+        }
+    }
     .scheme {
         .title {
             font-size: 21px;
@@ -355,8 +361,19 @@
     }
     .contacts {
         &__wrapper-form {
-            grid-template: repeat(5, minmax(47px, auto)) / 1fr
-            
+            grid-template: repeat(5, minmax(47px, auto)) / 1fr;
+            gap: 0;
+            label.error {
+                left: 10px;
+                top: 46px;
+            }
+            textarea {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__wrapper-input {
+            margin: 0 0 20px;
         }
         #text {
             grid-column: unset;
@@ -381,9 +398,7 @@
         &__title {
             display: none;
         }
-        &__police {
-
-        }
+        
         &__ears, &__bild {
             font-size: 11px;
         }
